@@ -5,6 +5,7 @@ import { InfraModule } from './infra/infra.module';
 import { BatchModule } from './modules/batch/batch.module';
 import { ReconcileModule } from './modules/reconcile/reconcile.module';
 import { ReportModule } from './modules/report/report.module';
+import { AuditProbeModule } from './modules/zero-trust/audit-probe.module';
 
 @Module({
   // settlement는 배치, 대사, 리포트처럼 역할이 다른 작업을 분리한다.
@@ -16,6 +17,7 @@ import { ReportModule } from './modules/report/report.module';
     BatchModule,
     ReconcileModule,
     ReportModule,
+    AuditProbeModule,
   ],
   controllers: [AppController],
   providers: [],

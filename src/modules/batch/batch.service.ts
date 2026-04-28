@@ -54,7 +54,6 @@ export class BatchService {
     );
 
     await this.httpBridgeService.sendLog(message, action, why, inputMessage);
-    await this.httpBridgeService.sendAudit(message, action, why, inputMessage);
 
     return {
       service: 'settlement',
